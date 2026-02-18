@@ -17,6 +17,9 @@ env/
 *.swp
 *.swo
 
+# Claude Code
+.claude/
+
 # Logs
 logs/
 *.log
