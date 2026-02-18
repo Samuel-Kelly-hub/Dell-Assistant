@@ -2,6 +2,12 @@
 
 An automated technical support system for Dell products. Scrapes Dell's support documentation, embeds it into a vector database, and uses a multi-agent chatbot to answer user questions via retrieval-augmented generation (RAG).
 
+I use several ways of selecting relevant parts of PDF documents for an LLM to analyse:
+RAG
+For long documents, reading the contents, identifying the relevant section(s) and then the selected section only.
+For short documents, reading the entire thing
+
+The chatbot utilises human-in-the-loop, logs its runs, and generates tickets for unsolved problems.
 ## Project Structure
 
 ```
